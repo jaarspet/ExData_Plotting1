@@ -25,7 +25,7 @@ dt <- strptime(paste(df.power$Date, df.power$Time), format="%d/%m/%Y %H:%M:%S")
                          
 ## Step 4 will be to create the plots
                          
-png(filename="plot4.png")
+png(filename="plot4.png", width=480, height=480)
 
 par(mfrow = c(2, 2))
 

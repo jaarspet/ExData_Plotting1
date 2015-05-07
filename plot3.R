@@ -25,7 +25,7 @@ dt <- strptime(paste(df.power$Date, df.power$Time), format="%d/%m/%Y %H:%M:%S")
                          
 ## Step 4 will be to create the plot 
                          
-png(filename="plot3.png")
+png(filename="plot3.png", width=480, height=480)
 
 plot(x=dt, y=df.power[,"Sub_metering_1"], type="l",ylab="Energy sub metering", main="", xlab="")
 lines(x=dt, y=df.power[,"Sub_metering_2"], col="red")
